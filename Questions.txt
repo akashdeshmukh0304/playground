@@ -1,0 +1,62 @@
+1. Given a list of reviews of a product and the relevant keywords, figure out the overall review of the product.
+Sample data:
+Input:
+keywords = ["best", "good", "average"]
+reviews = [
+  "Watch is good",
+  "watch works best for my requirements",
+  "Overall i would say watch is average",
+  "My feedback for this watch is good",
+  "No feedback from my side"
+]
+Output:
+good
+3,2,1
+
+
+***************************************************************************************
+2. Given a matrix of dimension m X n where each cell in the matrix can have values 0, 1 or 2 which mean the following:
+
+0: Empty cell
+1: Cells have fresh oranges
+2: Cells have rotten oranges
+
+Determine what is the minimum time required so that all the oranges become rotten. A rotten orange at index [i,j] can rot other fresh oranges at indices [i-1,j], [i+1,j], [i,j-1], [i,j+1] (up, down, left and right). If it is impossible to rot all the oranges then the program should return -1.
+Examples:
+Input:  arr[][C] = {{2, 1, 0, 2, 1},
+                  {1, 0, 1, 2, 1},
+                  {1, 0, 0, 2, 1}};
+Output:
+All oranges can become rotten in 2 time frames
+
+Explanation:
+At 0th time frame:
+{2, 1, 0, 2, 1}
+{1, 0, 1, 2, 1}
+{1, 0, 0, 2, 1}
+At 1st time frame:
+{2, 2, 0, 2, 2}
+{2, 0, 2, 2, 2} 
+{1, 0, 0, 2, 2}
+
+
+At 2nd time frame:
+{2, 2, 0, 2, 2}
+{2, 0, 2, 2, 2}
+{2, 0, 0, 2, 2}
+
+***************
+3. Given an array in which the ith element is the price of a given stock on day i.
+Design an algorithm to find the maximum profit obtained from stock trading.
+Note: You cannot buy on multiple days without selling what you have already bought (and vice-versa) as subsequent transactions of the same type are not allowed. You must sell before buying again and vice-versa.
+
+Input 1: [1,2,3,4,5]
+Output 1: 4
+Explanation 1: Buy on day 1 (price = 1) and sell on day 5 (price = 5), profit = 5-1 = 4.
+
+Input 2: [7,6,4,3,1]
+Output 2: 0
+Explanation 2: In this case, no transaction is done, i.e. max profit = 0.
+
+
+
